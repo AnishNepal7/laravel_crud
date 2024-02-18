@@ -1,5 +1,6 @@
 {
     "User": true,
     "Library": true,
-    "Department": true
+    "Department": true,
+    "Student": true
 }

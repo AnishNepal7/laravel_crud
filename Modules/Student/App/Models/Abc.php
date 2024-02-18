@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\User\App\Models;
+namespace Modules\Student\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\User\Database\factories\UsersFactory;
+use Modules\Student\Database\factories\AbcFactory;
 
-class Users extends Model
+class Abc extends Model
 {
     use HasFactory;
 
@@ -15,8 +15,8 @@ class Users extends Model
      */
     protected $fillable = [];
     
-    protected static function newFactory(): UsersFactory
+    protected static function newFactory(): AbcFactory
     {
-        //return UsersFactory::new();
+        //return AbcFactory::new();
     }
 }

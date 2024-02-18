@@ -1,17 +1,15 @@
 <?php
 
-namespace Modules\User\App\Providers;
+namespace Modules\Student\App\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Modules\User\App\Repositories\UserRepositoryInterface;
-use Modules\User\App\Repositories\UserRepository;
 
-class UserServiceProvider extends ServiceProvider
+class StudentServiceProvider extends ServiceProvider
 {
-    protected string $moduleName = 'User';
+    protected string $moduleName = 'Student';
 
-    protected string $moduleNameLower = 'user';
+    protected string $moduleNameLower = 'student';
 
     /**
      * Boot the application events.
@@ -32,9 +30,6 @@ class UserServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->register(RouteServiceProvider::class);
-        // $this->app->bind(UserRepositoryInterface::class,UserRepository::class);
-        $this->app->bind(UserRepositoryInterface::class,UserRepository::class);
-
     }
 
     /**
